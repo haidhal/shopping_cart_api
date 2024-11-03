@@ -23,6 +23,7 @@ class ScreenOne extends StatelessWidget{
                 height: 300,
               decoration: BoxDecoration(
                 image: DecorationImage(image: NetworkImage(
+                 // "https://i.pinimg.com/564x/07/ec/bd/07ecbddc27b046883cc6c48cbade7e8a.jpg"
                   "https://images.pexels.com/photos/6813473/pexels-photo-6813473.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
                   
                   ),
