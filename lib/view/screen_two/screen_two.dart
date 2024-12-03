@@ -5,8 +5,6 @@ import 'package:provider/provider.dart';
 import 'package:shopping_cart_api/controller/screen_two_controller.dart';
 import 'package:shopping_cart_api/view/cart_screen/cart_screen.dart';
 import 'package:shopping_cart_api/view/screen_three/screen_three.dart';
-//import 'package:shoppingcart_buttonsample_ui/view/screen_one/screen_one.dart';
-//import 'package:shoppingcart_buttonsample_ui/view/screen_three/screen_three.dart';
 
 class ScreenTwo extends StatefulWidget {
   const ScreenTwo({super.key});
@@ -32,8 +30,7 @@ class _ScreenTwoState extends State<ScreenTwo> {
     final providerObj = context.watch<ScreenTwoController>();
 
     return Scaffold(
-      //  debugShowCheckedModeBanner: false  ,
-
+    
       appBar: AppBar(
         leadingWidth: 70,
         toolbarHeight: 60,
@@ -272,11 +269,11 @@ class _ScreenTwoState extends State<ScreenTwo> {
                                   ))),
                         ),
                 )
-                ///////////
+                
               ],
             ),
 
-      //
+     
     );
   }
 }

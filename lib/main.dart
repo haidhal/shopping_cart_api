@@ -17,10 +17,11 @@ Future<void> main () async {
   Hive.registerAdapter(CartModelAdapter());
   var box =await Hive.openBox<CartModel>("cartBox"); // hive step 2
 
-runApp(MyApp());
+runApp(const MyApp());
 }
 class MyApp extends StatelessWidget {
  const MyApp({super.key});
+ @override
  Widget build(BuildContext context){
  return MultiProvider(
   providers: [
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
     ChangeNotifierProvider(create: (context)=>ScreenThreeController()),
     ChangeNotifierProvider(create: (context)=>CartScreenController())
   ],
-   child: MaterialApp(
+   child: const MaterialApp(
     debugShowCheckedModeBanner: false,
    home: ScreenOne(),
    ),
